@@ -1,0 +1,577 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorlinks:#775c5b;
+}
+
+
+h1, h2, h3{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    color: white;
+    font-weight: 500;
+}
+
+p{
+    font-family: "Crimson Text", serif;
+      font-weight: 400;
+
+}
+
+/*HEADER*/
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    width: 100%;
+    
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+header img{
+    width: 2.5rem;
+}
+
+
+
+.links{
+  display: none; 
+}
+
+.iconomenu{
+  display: inline-block;
+  width: 2em;
+  cursor: pointer;
+}
+
+
+/*SECCION ARTICULOS*/
+
+.explora{
+ margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+.articulos{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+
+.articulos article{
+    padding: 1.5em;
+    border-radius: 7px;
+    background-color: #e7d6d6;
+    margin-bottom: 1em;
+    box-shadow: -4px 5px 10px -2px rgba(0, 0, 0, 0.29);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+
+    flex: 0 0 48%;
+}
+
+.articulos a:hover{
+    background-color: #3a2929;
+    transition: 0.3s;
+
+}
+    
+
+.articulos h3{
+    color: #775c5b;
+    font-weight: 500;
+}
+
+.articulos p{
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.articulos a{
+    background-color: var(--colorlinks);
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+ .articulos article:nth-of-type(5) {
+    display: none;
+  }
+
+  .articulos article:nth-of-type(4) .imgetiqueta {
+    display: none;
+  }
+
+   
+
+/*FORMULARIO*/
+.formulario{
+     padding: 2rem;
+  text-align: center;
+  max-width: 100%;
+  background-color: #c09f9e;
+}
+
+.formulario form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 100%;
+
+
+}
+
+.formulario input[type="email"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  max-width: 200px;
+}
+
+.formulario button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.formulario h2{
+  font-size: 1.2rem;
+}
+
+
+/*ETIQUETA ARTICULOS*/
+.imgetiqueta{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.imgetiqueta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.etiqueta{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #775c5b;
+  color: white;
+  padding: 0.3em 0.7em;
+  font-size: 0.75em;
+  font-weight: bold;
+ 
+}
+
+/*SECCION PRINCIPAL*/
+.principal{
+    background-image: url("img/primeraimg.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+  position: relative;
+}
+
+.imgprincipal{
+    max-width: 800px;
+    text-align: center;
+}
+
+.parrafoprincipal{
+    display: none;
+
+}
+
+/*Grilla*/
+
+.galeria{
+    display: grid;
+    gap: 2px;
+    background-color: #3a2929;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 90vh;
+}
+
+.galeria a{
+    border-radius: 10px;
+    background-color: var(--colorlinks);
+    color: white;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.galeria a:hover{
+    background-color: #3a2929;
+    transition: 0.3s;
+}
+#centrado {
+    font-size: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+#centrado h2{
+    font-weight: 500;
+}
+
+.galeria article {
+  display: none;
+}
+
+.galeria article:nth-of-type(1),
+.galeria article:nth-of-type(2),
+.galeria article:nth-of-type(4) {
+  display: block;
+}
+
+.galeria article:nth-of-type(1){
+    background-color: rgb(139, 101, 114);
+}
+
+.galeria article:nth-of-type(2){
+    background-color: blanchedalmond;
+}
+
+
+.galeria article:nth-of-type(4){
+    background-image: url(img/galera1.jpg);
+    background-size: cover;
+  background-position: center;
+}
+
+
+/*FOOTER*/
+
+footer{
+  background-color: #ffffff; 
+  padding: 2rem 2rem;
+}
+
+.footercontenido {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ text-align: center;
+  flex-direction: column; 
+
+}
+
+.footertitulo {
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logosredes img{
+  width: 3vh;
+  height: 3vh;
+  align-items: center;
+}
+
+
+/*TABLET RESPONSIVE*/
+
+@media all and (min-width:768px){
+
+
+
+h1{
+    font-size: 2em;
+
+}
+
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap: 1.5em;
+}
+
+.articulos article{
+    width: 30%;
+    margin-bottom: 1.5em;
+}
+
+.quintoarticulo {
+    display: none;
+  }
+
+    .articulos article:nth-of-type(4) .imgetiqueta {
+    display: block;
+  }
+
+.principal{
+    justify-content: flex-start; 
+  }
+
+  .imgprincipal{
+    text-align: left; 
+  }
+
+  .links{
+    
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #775c5b;
+     color: white;
+     padding: 0.5rem 0.7rem;
+  border-radius: 20px;
+  transition: 0.3s;
+    
+}
+
+.links a:hover {
+  background-color: #3a2929;
+ 
+}
+
+#distinto{
+    background-color: black;
+}
+
+
+.iconomenu{
+    display: none; 
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+/*GRILLA TABLET*/
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+ gap: 2px;
+  height: 120vh;
+ 
+}
+
+
+
+.galeria article {
+    display: none;
+  }
+
+
+    /* Artículo 1 */
+.galeria article:nth-of-type(1) {
+  display: block;
+  background-color: rgb(139, 101, 114);
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Artículo 2 */
+.galeria article:nth-of-type(2) {
+  display: block;
+  background-color: blanchedalmond;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+/* Artículo 4 (imagen galera1) */
+.galeria article:nth-of-type(4) {
+  display: block;
+  background-image: url(img/galera1.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+
+.galeria article:nth-of-type(3) {
+  display: block;
+  background-color: #3a2929;
+  color: white;
+   
+  grid-column: span 2;
+  grid-row: span 1;
+   grid-row: 3 / 4;
+}
+
+
+
+
+
+/*footer*/
+  .footercontenido {
+    flex-direction: row; 
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .footertitulo {
+    margin-right: 10px;
+  }
+
+
+}
+
+
+
+
+
+/*ESCRITORIO RESPONSIVE*/
+
+@media all and (min-width:1200px){
+
+
+
+h1{
+    font-size: 3em;
+
+}
+
+.parrafoprincipal{
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+ 
+  .articulos article:nth-of-type(5) {
+    display: block;
+  }
+
+  .articulos article {
+  width: 30%; 
+  margin-bottom: 1.5em;
+}
+
+
+
+
+
+/*GRILLA*/
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 2px;
+    height: 100vh;
+  }
+
+  
+ .galeria article {
+    display: block;
+  }
+
+
+   .galeria article:nth-of-type(1) {
+    background-color: rgb(139, 101, 114);
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Artículo 2: texto + link (1 columna, 2 filas) */
+  .galeria article:nth-of-type(2) {
+    background-color: blanchedalmond;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  /* Artículo 3: texto solo (2 columnas, 1 fila) */
+  .galeria article:nth-of-type(3) {
+    background-color: #3a2929;
+    color: white;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  /* Artículo 4: imagen galería 1 (1 columna, 1 fila) */
+  .galeria article:nth-of-type(4) {
+    background-image: url('img/galera1.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Artículo 5: bloque color (1 columna, 1 fila) */
+  .galeria article:nth-of-type(5) {
+    background-color: #d89191;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Artículo 6: imagen galería 2 (1 columna, 1 fila) */
+  .galeria article:nth-of-type(6) {
+    background-image: url(img/galeria2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+ 
+
+  
+}
+
+
